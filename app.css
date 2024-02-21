@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,700;1,700&display=swap')
+
+.container{
+    /* border: 1px solid black; */
+    margin-top: 30px;
+    margin-left: 500px;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-text{
+    padding-left: 5px;
+}
+
+.card-content{
+    background-color: white;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    max-width: 700px ;   
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+.image img{
+    max-width: 100%;
+}
+
+.perfume {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: gray
+}
+
+h1{
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        font-size: 42px;
+}
+
+.description{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: lightgray
+}
+
+.btn{
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: 60px;
+    cursor: pointer;
+    transition: background-color .4s ease;
+}
+
+.btn:hover{
+    background-color: green;
+}
+
+.price{
+    display: flex;
+    font-family: "Fraunces", serif;
+    color: darkolivegreen;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+.strike{
+    padding-left: 15px;
+    font-size: 20px;
+    padding-top: 15px;
+    color:gray
+}
+
+
+@media only screen and (max-width: 770px) {
+ .grid{
+    grid-template-columns: 1fr;
+ }
+ .container{   
+ margin-top: 50px;
+ margin-bottom: 50px;
+}
+.image img{
+    max-height: 300px;
+    border-radius: 0 10px 0 0;
+    width: 100%;
+    object-fit: cover ;
+}
+
+}
+
+
+@media only screen and (max-width: 375px) {
+    .container{
+        margin: 10px auto;
+        /* padding: 0 15px; */
+    }
+    .image img{
+        max-height: 250px;;
+    }
+    .card-content{
+        padding-left: 20px;
+    }
+    .btn{
+        padding-bottom: 15px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .description{
+        font-size: 15px;
+    }
+    .price-org{
+    font-size: 37px;
+    
+   
+   }}
